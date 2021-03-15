@@ -1,0 +1,120 @@
+<html>
+
+<head>
+    <title>moviesJS</title>
+    <link rel="icon" href="images/cute.jpg">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!---------------------------------API---------------------------------------->
+    <section class="container text-white py-5">
+        <div class="row my-5">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input id="search11" placeholder="get movies by word..." class="w-100 text-center text-white input1">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input id="search" placeholder="search..." class="w-100 text-center text-white input1">
+                </div>
+            </div>
+        </div>
+        <div class="m-auto text-center">
+            <h2 class="element my-5 color11"></h2>
+        </div>
+        <div class="row" id="movies">
+
+        </div> 
+
+    </section>
+
+    <!---------------------------------Side Bar--------------------------------->
+    <section class="openbar d-flex">
+        <div class="sidebar text-white">
+            <div class="py-2">
+                <div class="p-3"><a href="#" class="text-white text-decoration-none link1">now_playing</a></div>
+                <div class="p-3"><a href="#" class="text-white text-decoration-none link2">popular</a></div>
+                <div class="p-3"><a href="#" class="text-white text-decoration-none link3">top_rated</a></div>
+                <div class="p-3"><a href="#" class="text-white link4">trending</a></div>
+                <div class="p-3"><a href="#" class="text-white text-decoration-none link5">upcoming</a></div>
+                <div class="p-3"><a href="#contact" class="text-white text-decoration-none link6">Contact Us</a></div>
+            </div>
+            <div class="sidebar-icon">
+                <i class="fab fa-facebook-f fa-sm mr-2"></i>
+                <i class="fab fa-twitter fa-sm  mr-2"></i>
+                <i class="fas fa-globe fa-sm"></i>
+                <p class="pt-2">Copyright Â© 2021 All Rights Reserved.</p>
+            </div>
+        </div>
+        <div class="open d-flex py-4  flex-column">
+            <img  src="images/logo.png" class="sidebar-img">
+            <i class="fa fa-align-justify p-3 close" id="open"></i>
+            <i class="fas fa-globe fa-xs"></i>
+            <i class="fas fa-share-alt fa-xs"></i>
+        </div>
+    </section>
+    <!---------------------------------------contact us--------------------------------------------->
+    <section class="container" id="contact">
+        <h2 class="text-white py-4 contact">ContactUs...</h2>
+        <div class="row pb-5">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Enter Your Name" class="w-100 text-center text-white input1">
+                    <error id="error1" class="text-danger py-2"></error>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Enter Email" class="w-100 text-center text-white input1">
+                    <error id="error2" class="text-danger py-2"></error>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input type="number" id="phone" placeholder="Enter Phone" class="w-100 text-center text-white input1">
+                    <error id="error3" class="text-danger py-2"></error>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input type="number" id="age" placeholder="Enter Age" class="w-100 text-center text-white input1">
+                    <error id="error4" class="text-danger py-2"></error>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input type="password" id="pass" placeholder="Enter Password" class="w-100 text-center text-white input1">
+                    <error id="error5" class="text-danger py-2"></error>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input type="password" id="repass" placeholder="Enter Re-Password" class="w-100 text-center mb-2 text-white input1">
+                    <error id="error6" class="text-danger py-2"></error>
+                </div>
+            </div>
+            <button id="submitBtn" class="btn btn-outline-danger ml-3">Submit</button>
+        </div>
+    </section>
+    <!----------------------------loading screen--------------------------->
+    <div id="loading">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+          </div>
+    </div>
+    <!----------------------------loading screen--------------------------->
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
