@@ -293,3 +293,24 @@ body
   }
   
 /*------------------- loading screen------------------------------- */
+@media(max-width: 820px){
+    .container {
+        width: 75%;
+    }
+}
+@media(max-width: 632px){
+    .container {
+        width: 75%;
+    }
+}
+@media(max-width: 365px){
+    .container {
+        width: 70%;
+    }
+}
+@media(max-width: 300px){
+    section,.container{
+        width: 300px;
+    }
+
+}
