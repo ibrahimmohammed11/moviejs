@@ -297,6 +297,12 @@ body
     .container {
         width: 75%;
     }
+    .movieT{
+        font-size: 15px;
+    }
+    .movieO{
+        font-size: 12px;
+    }
 }
 @media(max-width: 632px){
     .container {

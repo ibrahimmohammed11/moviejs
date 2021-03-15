@@ -22,12 +22,12 @@ function displayMovies()
     for(var i=0;i<movies.length;i++)
     {
         cols+=`
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6 my-3">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12 my-3">
             <div class="original">
                 <img src="https://image.tmdb.org/t/p/w500/${movies[i].poster_path}" class="w-100">
-                <div class="text-center p-2 movetitle py-5">
-                    <h4>${movies[i].original_title}</h4>
-                    <p>${movies[i].overview.slice(0,180)}....</p>
+                <div class="text-center p-2 movetitle py-3">
+                    <h4 class="movieT">${movies[i].original_title}</h4>
+                    <p class="movieO">${movies[i].overview.slice(0,130)}....</p>
                     <p><strong>Rate:</strong> <i class="fas fa-star"></i> ${movies[i].vote_average}</p>
                     <p><strong>Release Date:</strong> ${movies[i].release_date}</p>
                 </div>
@@ -62,12 +62,12 @@ function search(searchTxt){
         if(movies[i].original_title.toLowerCase().includes(searchTxt.toLowerCase()))
         {
             trs+=`
-            <div class="col-lg-3 col-md-4 col-sm-6 col-6 my-3">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 my-3">
             <div class="original">
                 <img src="https://image.tmdb.org/t/p/w500/${movies[i].poster_path}" class="w-100">
-                <div class="text-center p-2 movetitle py-5">
+                <div class="text-center p-2 movetitle py-3">
                     <h4 class="mt-5">${movies[i].original_title}</h4>
-                    <p>${movies[i].overview.slice(0,180)}....</p>
+                    <p>${movies[i].overview.slice(0,130)}....</p>
                     <p><strong>Rate:</strong> <i class="fas fa-star"></i> ${movies[i].vote_average}</p>
                     <p><strong>Release Date:</strong> ${movies[i].release_date}</p>
                 </div>
@@ -92,12 +92,12 @@ async function searchApi(searchText){
         if(newMovies[i].original_title.toLowerCase().includes(searchText.toLowerCase()))
         {
             trs+=`
-            <div class="col-lg-3 col-md-4 col-sm-6 col-6 my-3">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 my-3">
             <div class="original">
                 <img src="https://image.tmdb.org/t/p/w500/${newMovies[i].poster_path}" class="w-100">
-                <div class="text-center p-2 movetitle py-5">
+                <div class="text-center p-2 movetitle py-3">
                     <h4 class="mt-5">${newMovies[i].original_title}</h4>
-                    <p>${newMovies[i].overview.slice(0,180)}....</p>
+                    <p>${newMovies[i].overview.slice(0,130)}....</p>
                     <p><strong>Rate:</strong> <i class="fas fa-star"></i> ${newMovies[i].vote_average}</p>
                     <p><strong>Release Date:</strong> ${newMovies[i].release_date}</p>
                 </div>
