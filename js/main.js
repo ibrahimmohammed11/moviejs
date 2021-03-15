@@ -66,8 +66,8 @@ function search(searchTxt){
             <div class="original">
                 <img src="https://image.tmdb.org/t/p/w500/${movies[i].poster_path}" class="w-100">
                 <div class="text-center p-2 movetitle py-3">
-                    <h4 class="mt-5">${movies[i].original_title}</h4>
-                    <p>${movies[i].overview.slice(0,130)}....</p>
+                    <h4 class="movieT">${movies[i].original_title}</h4>
+                    <p class="movieO">${movies[i].overview.slice(0,130)}....</p>
                     <p><strong>Rate:</strong> <i class="fas fa-star"></i> ${movies[i].vote_average}</p>
                     <p><strong>Release Date:</strong> ${movies[i].release_date}</p>
                 </div>
@@ -96,8 +96,8 @@ async function searchApi(searchText){
             <div class="original">
                 <img src="https://image.tmdb.org/t/p/w500/${newMovies[i].poster_path}" class="w-100">
                 <div class="text-center p-2 movetitle py-3">
-                    <h4 class="mt-5">${newMovies[i].original_title}</h4>
-                    <p>${newMovies[i].overview.slice(0,130)}....</p>
+                    <h4 class="movieT">${newMovies[i].original_title}</h4>
+                    <p class="movieO">${newMovies[i].overview.slice(0,130)}....</p>
                     <p><strong>Rate:</strong> <i class="fas fa-star"></i> ${newMovies[i].vote_average}</p>
                     <p><strong>Release Date:</strong> ${newMovies[i].release_date}</p>
                 </div>
